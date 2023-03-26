@@ -62,7 +62,7 @@ function main() {
             });
             console.log("Esperando 40s - "+id)
             await delay(36000)
-            console.log("Total: " + total)
+            console.log("Total: " + total.length)
             await delay(6000)
 
         
