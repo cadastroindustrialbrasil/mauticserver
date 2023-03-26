@@ -57,8 +57,14 @@ function main() {
 
             });
             x++
+            var total = await sequelize.query("SELECT * FROM `lead_tags_xref`", {
+                type: QueryTypes.SELECT
+            });
             console.log("Esperando 40s - "+id)
-            await delay(40000)
+            await delay(36000)
+            console.log("Total: " + total)
+            await delay(6000)
+
         
         }
         }
