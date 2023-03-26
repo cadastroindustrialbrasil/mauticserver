@@ -12,12 +12,6 @@ const sequelize = new Sequelize('mautic_cadbr', 'mautic_cadbr', 'Webmaster1231*'
         freezeTableName: true,
         timestamps: false,
     },
-    dialectOptions: {
-        options: {
-            requestTimeout: 3000000
-        }
-    },
-
     logging: false
 });
 
